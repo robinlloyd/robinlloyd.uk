@@ -1,30 +1,45 @@
-import { getPostsMetadata } from '@helpers/get_posts_metadata'
+import { getAllDocs } from '@helpers/get_all_docs'
 
+import HomeTemplate from '@components/templates/home_template'
 import PostCard from '@components/post_card'
 
-interface IPostPreview {
-  date: string
+interface IPost {
+  meta: {
+    date: string
+    previewImage: string
+    subtitle: string
+    title: string
+  }
   slug: string
-  subtitle: string
-  title: string
+}
+interface IHomePageProps {
+  posts: IPost[]
 }
 
-const HomePage = () => {
-  const renderPreviews = (post: IPostPreview) => {
+const HomePage = ({ posts }: IHomePageProps) => {
+  const renderPreviews = (post: IPost) => {
     return (
       <div key={post.slug}>
-        <PostCard post={post} />
+        <PostCard post={post.meta} slug={post.slug} />
       </div>
     )
   }
 
-  const posts = getPostsMetadata()
   return (
-    <div>
-      <h1>Home</h1>
+    <HomeTemplate>
       {posts.map(renderPreviews)}
-    </div>
+    </HomeTemplate>
   )
+}
+
+export async function getStaticProps() {
+  const docs = getAllDocs()
+
+  return {
+    props: {
+      posts: docs
+    }
+  }
 }
 
 export default HomePage

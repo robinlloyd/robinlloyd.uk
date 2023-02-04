@@ -3,7 +3,8 @@ title: "React Hooks - A Deep Dive"
 subtitle: "Part 1: React Hooks Overview"
 date: "2023-03-02"
 tags: ["react", "hooks", "javascript"]
-series: "react-hooks-deep-dive"
+series: { name: "React Hooks - A Deep Dive", slug: "react-hooks-deep-dive" }
+previewImage: "/images/deep-dive-into-react-hooks.jpg"
 ---
 
 ## Other posts in this series
@@ -26,7 +27,7 @@ Below are some examples of the old way of using state using a class component, a
 
 ### Class Component
 
-```js
+```jsx
 class MyStatusComponent extends React.Component {
   constructor(props) {
     super(props)
@@ -52,7 +53,7 @@ class MyStatusComponent extends React.Component {
 
 ### Hooks
 
-```js
+```jsx
 const MyStatusComponent = () => {
   const [status, setStatus] = useState('awaiting submission')
 
@@ -75,7 +76,7 @@ Note that the class version of the component uses significantly more code than t
 
 We've already glimpsed an example of how to use hooks in the previous section, but let's take a look at the syntax in more detail, using the `useState` hook as an example.
 
-```js
+```jsx
 const [status, setStatus] = useState('awaiting submission')
 ```
 
@@ -87,7 +88,7 @@ These can be named whatever you like, although it's common to give the first var
 
 To use multiple states, you can call `useState` multiple times, and you'd name the variables accordingly.
 
-```js
+```jsx
 const [status, setStatus] = useState('awaiting submission')
 const [name, setName] = useState('John Smith')
 ```
