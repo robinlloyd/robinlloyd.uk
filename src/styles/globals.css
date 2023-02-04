@@ -1,0 +1,17 @@
+:root {
+  --c-primary: #00CCFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+img {
+  max-width: 100%;
+}
