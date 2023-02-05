@@ -22,9 +22,9 @@
     "baseUrl": ".",
     "paths": {
       "@src/*": ["./src/*"],
-      "@app/*": ["./src/pages/*"],
       "@components/*": ["./src/components/*"],
-      "@helpers/*": ["./src/helpers/*"]
+      "@helpers/*": ["./src/helpers/*"],
+      "@ui/*": ["./src/ui/*"]
     },
     "plugins": [
       {
