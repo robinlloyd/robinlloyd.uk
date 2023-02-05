@@ -7,6 +7,6 @@ export async function markdownToHtml(markdown: string) {
     .use(prism)
     .use(html, { sanitize: false })
     .process(markdown)
-  console.log('resulttttttttttttttttttttttttt', result.toString())
+
   return result.toString()
 }

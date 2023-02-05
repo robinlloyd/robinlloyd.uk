@@ -15,7 +15,7 @@ This is the introductory post introducing the concept of hooks and my reason for
 
 ## Why am I writing this?
 
-I've been using React Hooks for a while now, and understand the basics, but have never really done a deep dive on when to use certain hooks, whether other hooks or custom hooks are better than commonly accepted methods, and how to use them in a way that is easy to understand and maintain.
+I've been using React Hooks for a while now, and understand the basics, but have never really done a deep dive on when to use certain hooks. I want a better understanding of whether other hooks or custom hooks are better than commonly accepted methods, and how to use them in a way that is easy to understand and maintain.
 
 I'm writing this series to help me understand hooks better by providing examples, links to documentation, and adding my own thoughts and opinions. If anyone else stumbles across this series and finds it useful, that's great too!
 

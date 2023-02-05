@@ -3,6 +3,7 @@ import { getAllDocs } from '@helpers/get_all_docs'
 import { getDocBySlug } from '@helpers/get_doc_by_slug'
 
 import PostTemplate from '@components/templates/post_template'
+import PostArticle from '@components/post_article'
 
 interface IPostPageProps {
   content: string
@@ -19,8 +20,7 @@ interface IPostPageProps {
 export const PostPage = ({ content, meta, slug }: IPostPageProps) => {
   return (
     <PostTemplate>
-      <h1>{meta.title}</h1>
-      <article dangerouslySetInnerHTML={{ __html: content }} />
+      <PostArticle content={content} meta={meta} />
     </PostTemplate>
   )
 }

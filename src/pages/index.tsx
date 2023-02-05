@@ -1,7 +1,7 @@
 import { getAllDocs } from '@helpers/get_all_docs'
 
 import HomeTemplate from '@components/templates/home_template'
-import PostCard from '@components/post_card'
+import PostCardList from '@components/post_list'
 
 interface IPost {
   meta: {
@@ -17,17 +17,9 @@ interface IHomePageProps {
 }
 
 const HomePage = ({ posts }: IHomePageProps) => {
-  const renderPreviews = (post: IPost) => {
-    return (
-      <div key={post.slug}>
-        <PostCard post={post.meta} slug={post.slug} />
-      </div>
-    )
-  }
-
   return (
     <HomeTemplate>
-      {posts.map(renderPreviews)}
+      <PostCardList posts={posts} />
     </HomeTemplate>
   )
 }
