@@ -1,7 +1,7 @@
 ---
 title: "React Hooks - A Deep Dive"
 subtitle: "Part 1: React Hooks Overview"
-date: "2023-03-02"
+date: "2023-02-03"
 tags: ["react", "hooks", "javascript"]
 series: { name: "React Hooks - A Deep Dive", slug: "react-hooks-deep-dive" }
 previewImage: "/images/deep-dive-into-react-hooks.jpg"
@@ -10,6 +10,7 @@ previewImage: "/images/deep-dive-into-react-hooks.jpg"
 ## Other posts in this series
 
 - [React Hooks - A Deep Dive](/posts/deep-dive-into-react-hooks)
+- [React Hooks - useState](/posts/react-hooks-usestate)
 
 This is the introductory post introducing the concept of hooks and my reason for writing about them. Other posts in the series will be added as they are published.
 
